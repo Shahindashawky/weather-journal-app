@@ -55,7 +55,8 @@ function Weatherdata(req,res){
     newEntry = {
         date: req.body.date,
         temp: req.body.temp,
-        content: req.body.content
+        content: req.body.content,
+        feeling: req.body.feeling
     }
   
     projectData.push(newEntry)
