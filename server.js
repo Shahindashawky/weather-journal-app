@@ -52,14 +52,13 @@ function getData (req, res) {
 
 function Weatherdata(req,res){
 
-    newEntry = {
+    projectData = {
         date: req.body.date,
         temp: req.body.temp,
         content: req.body.content,
         feeling: req.body.feeling
     }
   
-    projectData.push(newEntry)
     res.send(projectData)
     console.log(projectData)
   }
